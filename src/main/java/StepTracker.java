@@ -17,7 +17,9 @@ public StepTracker(int goal){
  public int activeDays(){
   return days; 
  }
- public double AverageSteps(){
+ public double averageSteps(){
+  if (total==0)
+   return 0.0; 
   return (double)total/days; 
  }
 } 
